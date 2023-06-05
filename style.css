@@ -18,60 +18,115 @@ header{
     padding: 0px;
 }
 .logo img{
-    width: 250px;
+    width: 300px;
 
 }
 .search input{
-    width: 300px;
+    width: 250px;
     padding: 10px;
 }
 
 .contenedor__menu{
     width: 100%;
     height: 100%;
-    background:red;
-    padding: 0px 20px;
+    background:black;
+    padding: 0px 10px;
+    border: 0cm;
+    margin-top: 1px;
 
 }
-.menu{
-    max-width: 700px;
+.menu {
+    max-width: 1200px;
     margin: auto;
     height: 100%;
+    padding: 0px 20px;
+    background-position: 100px;
 }
-
 nav{
     height: 100%;
+    padding-inline-start: 500px;
 }
-
-nav > ul {
+nav ul{
     height: 100%;
     display: flex;
+     
 }
-nav>ul>li{
+nav  ul li{
     height: 100%;
-    list-style: none;
+    list-style: none ;
     position: relative;
-    
 }
+nav ul li:first-child  a{
+    background-image: url(img/homeeee.jpg);
+    background-size:25px ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: fit-content ;
+    padding: 22px 30px ;
+}
+nav ul li:first-child:hover a{
+    background-image: url(img/homeeee.jpg);
+    background-size:  25px;
+    background-repeat: no-repeat;
+    background-position:center center;
+     
     
 
-
-
-nav>ul>li>a{
-    width: 100%;
+}
+nav ul li a{
+    width:100% ;
     height: 100%;
-    align-items: center;
-    padding: 14px;
     display: flex;
-    color: aliceblue;
+    align-items: center;
+    padding: 15px ;
+    color: beige;
     font-size: 14px;
-    transition: all 300ms ease; 
-}
-nav>ul>li>a:hover{
-    transform: scale(1.1);
-    background: blue;
+    transition: all 300ms ease;
+    
 
 }
+nav ul li a:hover{
+    transform: scale(1.1) ;
+    width: fit-content ;
+    cursor: pointer;
+    background: red;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5)  ;
+
+}
+#selected{
+    transform: scale(1.1) ;
+    width: fit-content ;
+    cursor: pointer;
+    background-color: red;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5)  ;
+    
+}
+/*ELEMENTOS RESPOSIVOS*/
+.icon__menu{
+    font-size: 2px;
+    color: aqua;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+#label__menu{
+    width: 25px;
+    height: 100%;
+    display: none;
+}
+#check__menu{
+    display: none;
+}
+
+#selected{
+    color: bisque
+
+}
+
+
+
 
 
 
