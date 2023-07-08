@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
 *{
-
     box-sizing: border-box;
-    font-family:'Source Sans Pro', sans-serif; 
+    font-family: 'Chelsea Market', cursive;
     margin: 0;
     padding: 0;
 
 }
 body{
-   background-color: black;
+   background-color: rgb(0, 0, 0);
    width: 100%;
    height: 100vh;
    justify-content: center;
@@ -18,18 +17,18 @@ body{
 }
 header{
    width: 100%;
-   height: 300px;
+   height: 160px;
 }
 /*HEADER SUPERIOR*/
 .header__superior{
-
+    height: 110px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .logo img{
     width: 400px;
-    height: 200px;
+    height: 190px;
 
 }
 .search input{
@@ -39,16 +38,16 @@ header{
 
 .contenedor__menu{
     width: 100%;
-    height: 65px;
-    background:rgb(199, 141, 141);
+    height: 50px;
+    background:r#5f1a1a;
 
 }
 .menu {
-    max-width: 1000px;
+    max-width: 100%;
     margin: 0;
     height: 100%;
-    padding: 0px 2px;
-    background-position: 10px;
+    padding: 2px;
+    *background-position: 10px;
 }
 nav{
     height: 100%;
@@ -66,47 +65,45 @@ nav  ul li{
 }
 nav ul li:first-child  a{
     background-image: url(img/homeeee.jpg);
-    background-size:25px ;
+    background-size:30px ;
     background-repeat: no-repeat;
     background-position: center center;
     width: fit-content ;
-    padding: 22px 30px ;
+    padding: 25px 30px ;
 }
 nav ul li:first-child:hover a{
     background-image: url(img/homeeee.jpg);
-    background-size:  25px;
+    background-size:  30px;
     background-repeat: no-repeat;
     background-position:center center;
      
-    
-
 }
 nav ul li a{
     width:100% ;
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 15px ;
-    color: beige;
-    font-size: 14px;
+    padding: 25px ;
+    color: rgb(235, 235, 218);
+    font-size: 15px;
     transition: all 300ms ease;
-    
+    text-decoration: none;
 
 }
 nav ul li a:hover{
     transform: scale(1.1) ;
     width: fit-content ;
     cursor: pointer;
-    background: red;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5)  ;
+    background: rgb(148, 108, 108);
+    box-shadow: 0px 0px 10px 0px rgba(212, 190, 190, 0.5)  ;
 
 }
 #selected{
     transform: scale(1.1) ;
     width: fit-content ;
     cursor: pointer;
-    background-color: red;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5)  ;
+    background-color: rgb(148, 108, 108);
+    box-shadow: 0px 0px 10px 0px rgba(100, 88, 88, 0.5)  ;
     
 }
 /*ELEMENTOS RESPOSIVOS*/
@@ -146,7 +143,7 @@ nav ul li a:hover{
         background-color: rgb(5, 46, 82);
         position: fixed;
         left: 0;
-        top: 150px;
+        top: 15px;
         width: 100%;
         height: 300px;
         transition: all 300ms ease;
@@ -176,12 +173,12 @@ nav ul li a:hover{
 .container-carousel {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 420px;
     background-color: #e0e0e0;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
     border-radius: 5px;
     overflow: hidden;
-  
+    margin:  30px 0;
 }
 
 .carruseles {
@@ -224,7 +221,7 @@ nav ul li a:hover{
 .btn-left:hover,
 .btn-right:hover {
     background-color: #333333d4;
-    color: #b30a
+    color: rgba(255, 252, 251, 0.667)
 }
     
 
@@ -235,19 +232,26 @@ nav ul li a:hover{
 .btn-right {
     right: 10px;
 }
+
 /*:::::Pie de Pagina*/
 .pie-pagina{
     width: 100%;
-    background-color: black;
+    background-color: rgb(148, 108, 108);
+    margin: 50px 0;
+}
+.guia{
+    display: flex;
+    margin: 10px;
+}
+.guia>p{
+    margin: 0 20px;
 }
 .pie-pagina .grupo-1{
     width: 100%;
     max-width: 1200px;
-    margin: auto;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap:50px;
-    padding: 45px 0px;
 }
 .pie-pagina .grupo-1 .box figure{
     width: 100%;
@@ -255,17 +259,18 @@ nav ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #000000;
 }
 .pie-pagina .grupo-1 .box figure img{
     width: 250px;
 }
 .pie-pagina .grupo-1 .box h2{
-    color: #fff;
-    margin-bottom: 25px;
+    color: #6d2020;
+    margin: 20px;
     font-size: 20px;
 }
 .pie-pagina .grupo-1 .box p{
-    color: #efefef;
+    color: #6d2020;
     margin-bottom: 10px;
 }
 .pie-pagina .grupo-1 .red-social a{
@@ -276,18 +281,16 @@ nav ul li a:hover{
     line-height: 45px;
     color: #581c1c;
     margin-right: 10px;
-    background-color: #0d2033;
     text-align: center;
     transition: all 300ms ease;
 }
 .pie-pagina .grupo-1 .red-social a:hover{
-    color: rgb(2, 20, 20);
+    color: rgb(78, 116, 116);
 }
 .pie-pagina .grupo-2{
-    background-color: #0a1a2a;
+    background-color: #581c1c;
     padding: 15px 10px;
-    text-align: center;
-    color: #fff;
+    color:rgb(180, 140, 140);
 }
 .pie-pagina .grupo-2 small{
     font-size: 15px;
@@ -300,38 +303,37 @@ nav ul li a:hover{
         padding: 35px 0px;
     }
 }
-.contenedor__recomendaciones{
+/* Main */
+.container-items{
     display: flex;
-    padding: 50px 0;
-}
-.parte-1{
-    background: #e0e0e0;
-    width: 600px;
-    height: 200px;
-    padding: 30px  ;
-    align-items: center center;
-}
-
-.parte-2{
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 10px;
+    justify-content: end;
+    margin:  60px 50px;
 }
 
 .item{
     border-radius: 10px;
+    padding: 0 10px;
+    width: 50%;
 }
 
 .item:hover{
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.979);
+}
+.container-items>.box1{
+    width: 50%;
+    background: #000000;
+    color: #ffffff;
+    font-size: 1.2rem;
 }
 
 .item img{
     width: 100%;
-    height: 300px;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
-    transition: all .5s;
+    transition: all .4s;
 }
 
 .item figure{
@@ -339,8 +341,9 @@ nav ul li a:hover{
 }
 
 .item:hover img{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
+
 
 
 
